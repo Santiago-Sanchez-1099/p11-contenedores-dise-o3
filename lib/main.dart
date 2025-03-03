@@ -17,7 +17,7 @@ class PAutonoma extends StatelessWidget {
           title: const Center( // Centra el título del AppBar
             child: Text('Santiago Sánchez Tinoco Mat: 22308051281099'),
           ),
-          backgroundColor: Colors.red,
+          backgroundColor: const Color.fromARGB(255, 240, 117, 147),
         ),
         body: Center( // Centra todo el contenido en la pantalla
           child: Column(
@@ -27,35 +27,44 @@ class PAutonoma extends StatelessWidget {
                 width: 200, // Ancho estático
                 height: 80, // Alto reducido
                 margin: const EdgeInsets.all(10), // Margen para separar
-                color: Colors.orange,
+                color: Colors.red,
                 child: const Center(child: Text('Contenedor 1')),
               ),
               Container(
                 width: 200, // Ancho estático
                 height: 80, // Alto reducido
                 margin: const EdgeInsets.all(10), // Margen para separar
-                color: Colors.yellow,
+                color: const Color.fromARGB(255, 255, 127, 104),
                 child: const Center(child: Text('Contenedor 2')),
               ),
               Container(
                 width: 200, // Ancho estático
                 height: 80, // Alto reducido
                 margin: const EdgeInsets.all(10), // Margen para separar
-                color: Colors.green,
+                color: Colors.grey,
                 child: const Center(child: Text('Contenedor 3')),
               ),
               Container(
                 width: 200, // Ancho estático
                 height: 80, // Alto reducido
                 margin: const EdgeInsets.all(10), // Margen para separar
-                color: Colors.blue,
+                color: Colors.yellow,
                 child: const Center(child: Text('Contenedor 4')),
               ),
               Container(
                 width: 200, // Ancho estático
                 height: 80, // Alto reducido
                 margin: const EdgeInsets.all(10), // Margen para separar
-                color: Colors.purple,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.blue.shade900, // Azul oscuro
+                      const Color.fromARGB(255, 92, 203, 255), // Azul cielo
+                    ],
+                    begin: Alignment.centerLeft, // Inicia a la izquierda
+                    end: Alignment.centerRight, // Termina a la derecha
+                  ),
+                ),
                 child: const Center(child: Text('Contenedor 5')),
               ),
             ],
